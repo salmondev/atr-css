@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from  '@angular/forms';
-import { UploadService } from  '../upload.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { UploadService } from '../../upload.service';
 
 @Component({
   selector: 'app-home',
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  nFileChange(event) {
+  onFileChange(event) {
     if (event.target.files.length > 0) {
       const file = event.target.files[0];
       this.form.get('avatar').setValue(file);

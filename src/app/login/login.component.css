@@ -1,0 +1,10 @@
+.bgindex {
+    z-index: 9999;
+}
+.fullheight {
+    margin-top: -3%;
+    min-height: 100vh;
+}
+.greencard{
+    background-color: #8DC63F;
+}
