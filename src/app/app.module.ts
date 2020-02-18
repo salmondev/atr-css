@@ -12,6 +12,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { LayoutComponent } from './layouts/layout/layout.component';
 
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     HomeComponent,
     SidenavComponent,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
