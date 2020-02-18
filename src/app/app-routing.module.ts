@@ -12,7 +12,16 @@ import { AuthGuard } from './_helpers';
 
 const routes: Routes = [
 
-  { path: '', component: HomeComponent, canActivate: [AuthGuard] },
+  {
+    path: '', component: LayoutComponent, canActivate: [AuthGuard],
+     children: [
+      {
+        path: 'home',
+        component: HomeComponent,
+        pathMatch: 'full'
+      },
+    ]
+  },
   { path: 'login', component: LoginComponent },
   /*{
     path: 'login',
