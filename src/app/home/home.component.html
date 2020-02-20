@@ -6,8 +6,11 @@
     <h4>Upload Automated Test Result</h4>
     <br />
     <label><b>Select Project</b></label>
-    <select class="form-control" id="proj1">
+    <!-- <select class="form-control" id="proj1">
       <option>ProjectUSSD_Template</option>
+    </select> -->
+    <select class="form-control" [(ngModel)]="selectone">
+      <option *ngFor="let item of data;" value="{{item}}">{{ item }} </option>
     </select>
     <br />
     <label><b>Zip File Result Robot (ZIP file must have log.html, report.html,
