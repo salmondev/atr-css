@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 // used to create fake backend
@@ -19,6 +19,9 @@ import { LayoutComponent } from './layouts/layout/layout.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbdTableComplete } from './table/table.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,9 +29,12 @@ import { LoginComponent } from './login/login.component';
     SidenavComponent,
     FooterComponent,
     LayoutComponent,
-    LoginComponent
+    LoginComponent,
+    NgbdTableComplete
   ],
   imports: [
+    FormsModule,
+    NgbModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { LayoutComponent } from './layouts/layout/layout.component';
 
 import { AuthGuard } from './_helpers';
+import { NgbdTableComplete } from './table/table.component';
 
 
 
@@ -18,6 +19,10 @@ const routes: Routes = [
       {
         path: '',
         component: HomeComponent,
+      },
+      {
+        path: 'jenkins',
+        component: NgbdTableComplete,
       },
     ]
   },
