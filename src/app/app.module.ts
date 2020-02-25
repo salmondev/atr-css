@@ -19,7 +19,6 @@ import { LayoutComponent } from './layouts/layout/layout.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     LayoutComponent,
     LoginComponent,
-    NgbModule
   ],
   imports: [
     BrowserModule,
